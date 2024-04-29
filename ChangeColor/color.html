@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="js-icon.png" />
+    <title>JS Color Changer</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: roboto;
+      }
+      ::selection {
+        background-color: paleturquoise;
+        color: black;
+      }
+      .container {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      h1 {
+        font-style: oblique;
+      }
+      button {
+        height: 30px;
+        width: 100px;
+        margin: 10px;
+        font-size: 18px;
+        font-weight: 550;
+      }
+      .color {
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Color Picker</h1>
+      <div class="btn">
+        <button class="start">Start</button>
+        <button class="stop">Stop</button>
+      </div>
+      <div class="color"></div>
+    </div>
+  </body>
+  <script src="color.js"></script>
+</html>
