@@ -20,7 +20,8 @@ connectDB()
 
 /*
 import express from "express";
-const app = express()(async () => {
+const app = express()
+(async () => {
   try {
     mongoose.connect(`${process.env.MONGODB_URI}/${DB_NAME}`);
     app.on("error", (error) => {
